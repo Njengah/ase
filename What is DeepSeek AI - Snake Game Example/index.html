@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game-container">
+      <h2>Snake Game</h2>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <p id="score">Score: 0</p>
+
+      <div class="game-controls">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resumeBtn" style="display: none;">Resume</button>
+      </div>
+
+      <div class="game-settings">
+        <label for="levelSlider">Level: <span id="levelValue">1</span></label>
+        <input
+          type="range"
+          id="levelSlider"
+          min="1"
+          max="10"
+          step="1"
+          value="1"
+        />
+      </div>
+    </div>
+
+    <div id="gameOverModal" class="modal">
+      <div class="modal-content">
+        <h3>Game Over!</h3>
+        <p id="finalScore"></p>
+        <button id="playAgain">Play Again</button>
+      </div>
+    </div>
+    <audio id="eatSound" src="assets/eatfood.wav" preload="auto"></audio>
+    <audio id="gameOverSound" src="assets/gameover.wav" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
