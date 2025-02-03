@@ -2,21 +2,11 @@
 
 Welcome to the AI Software Engineer YouTube channel repository! This repository contains code projects organized by tutorials featured on the channel.
 
-## Tutorials
 
-### Tutorial #1 - What is DeepSeek AI? Get Started by Building a Snake Game
-
-In this tutorial, we explore DeepSeek AI by building a classic Snake game. You'll learn the fundamentals of AI and game development using Python.
-
-#### Contents
-
-- **Snake Game Implementation**: Code files for implementing the Snake game.
-- **AI Integration**: Examples of integrating AI features into the game.
-- **Resources**: Additional resources and references mentioned in the tutorial.
 
 ## Getting Started
 
-To get started with any of the tutorials, simply clone the repository and navigate to the respective tutorial directory. Each tutorial directory contains detailed instructions and code to follow along.
+To get started with any of the tutorials, simply clone the repository and navigate to the respective tutorial branch. Each tutorial branch contains detailed prompts and code to follow along.
 
 ## Contributing
 
@@ -28,7 +18,7 @@ This repository is licensed under the MIT License. See the [LICENSE](./LICENSE) 
 
 ## About the AI Software Engineer YouTube Channel
 
-The AI Software Engineer YouTube channel focuses on practical AI tutorials, covering topics from basic algorithms to complex AI applications in various domains.
+The AI Software Engineer YouTube channel focuses on practical AI tutorials, covering topics from basi to complex applications in various domains.
 
 ## Contact
 
