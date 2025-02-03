@@ -1,0 +1,86 @@
+
+# Stock Market App Prompts
+
+------------------------------------------------------------------------------
+
+## 1. Start
+
+Let’s create a Python app that displays the latest stock market data using Streamlit
+
+We’ll use the yfinance library to fetch stock data and Streamlit to build the app interface
+
+I would like to guide you on a step by step, are you ready?  
+
+------------------------------------------------------------------------------
+
+## 2. Setting Up the Environment
+
+Prompt:
+
+First, let’s set up a virtual environment and install the libraries we require
+
+I am working on Windows guide me on how to create and activate the virtual enviroment and install the dependencies we require  
+
+------------------------------------------------------------------------------
+
+## 3. Creating the Streamlit App
+
+Prompt :
+
+Lets now create the Steamlit App we start with the main file named app.py generate the code
+
+------------------------------------------------------------------------------
+
+## 4. Adding User Input
+
+Prompt :
+
+How do we add the user input ?  - input field  
+
+------------------------------------------------------------------------------
+
+## 5. Fetching Stock Data
+
+Prompt:
+
+We’ll use yfinance to fetch stock data. If the user enters a valid symbol, we’ll display the stock information - generte the code
+
+------------------------------------------------------------------------------
+
+## 6. Displaying Stock Information
+
+Prompt:
+
+Let’s display key stock information like company name, current price, market cap, P/E ratio, and dividend yield - generte the code
+
+------------------------------------------------------------------------------
+
+## 7. Displaying Historical Data
+
+Prompt:
+
+Let’s display the historical stock data for the last 1 month in a table
+
+------------------------------------------------------------------------------
+
+## 8. Plotting the Closing Price
+
+Prompt:
+
+Using Streamlit’s built-in charting functionality plot the closing price over time
+
+------------------------------------------------------------------------------
+
+## 9. Handling Errors
+
+Prompt:
+
+Let’s add error handling in case the user enters an invalid ticker symbol
+
+------------------------------------------------------------------------------
+
+## 10 More Features
+
+Prompt :
+
+What other new features can we implment on this app to make it better.

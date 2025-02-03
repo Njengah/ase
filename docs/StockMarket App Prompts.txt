@@ -1,0 +1,93 @@
+
+
+Prompt List for Stock Market Data App (Streamlit & yFinance)
+
+--------------------------------------------------------------------------------------
+Objective
+
+Develop a Streamlit-based Stock Market Data App that allows users to input a stock ticker symbol and retrieve real-time stock market data using the yfinance library. The app should display basic stock details, historical data, and a closing price chart.
+
+--------------------------------------------------------------------------------------
+
+Step 1: Project Setup
+Prompt:
+
+"Create a Python-based web application using Streamlit that fetches and displays stock market data. The app should retrieve stock information using the yfinance library and present it in a user-friendly interface."
+
+Expected Outcome:
+
+A Streamlit app structure with a clear title and description.
+Installation of required libraries (streamlit and yfinance).
+
+--------------------------------------------------------------------------------------
+
+Step 2: User Input Handling
+Prompt:
+
+"Add a sidebar in the Streamlit app where users can enter a stock ticker symbol. The default value should be set to AAPL. Ensure that the app dynamically updates the stock data when the user changes the ticker symbol."
+
+Expected Outcome:
+
+A sidebar with a text input field for entering the stock ticker.
+A placeholder value of "AAPL" for quick testing.
+
+
+--------------------------------------------------------------------------------------
+
+Step 3: Fetch Stock Market Data
+Prompt:
+
+"Use the yfinance library to retrieve stock market data based on the user-inputted ticker symbol. Display key stock details such as the company name, current price, and market capitalization. If the ticker symbol is invalid, display an error message."
+
+Expected Outcome:
+
+Stock data retrieval via yfinance.Ticker().
+Display of company name, current price, and market capitalization.
+Error handling for incorrect ticker symbols.
+
+--------------------------------------------------------------------------------------
+
+Step 4: Display Historical Data
+Prompt:
+
+"Fetch and display historical stock data for the last 30 days. Present this data in a structured format within the Streamlit app."
+
+Expected Outcome:
+
+Retrieval of historical stock data using stock_data.history(period="1mo").
+Display of the data in a table format.
+
+--------------------------------------------------------------------------------------
+
+Step 5: Data Visualization
+Prompt:
+
+"Create a line chart using Streamlit to visualize the stock's closing price over the last 30 days. Ensure the chart updates dynamically based on user input."
+
+Expected Outcome:
+
+A line chart showing the stock's closing prices over the last 30 days.
+Dynamic updates when a new ticker is entered.
+
+--------------------------------------------------------------------------------------
+
+Step 6: Error Handling & User Experience
+Prompt:
+
+"Implement robust error handling to ensure smooth functionality. If the stock data retrieval fails, display a user-friendly error message. Additionally, show a warning message if no ticker symbol is entered."
+
+Expected Outcome:
+
+Error messages for invalid stock symbols.
+Warning messages prompting users to enter a ticker symbol.
+
+--------------------------------------------------------------------------------------
+
+Final Output
+A fully functional Stock Market Data App with:
+✅ A user-friendly Streamlit interface
+✅ Sidebar input for stock ticker symbols
+✅ Real-time stock information display
+✅ Historical stock data table
+✅ Closing price line chart
+✅ Error handling & user feedback
