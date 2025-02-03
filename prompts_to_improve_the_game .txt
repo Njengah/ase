@@ -1,0 +1,43 @@
+---------------------------------------------------------
+
+ Next Prompts to Improve the Game  
+
+---------------------------------------------------------
+
+First we need to make the food realistic 
+ Prompt :  {Make the food more realistic by using a fruit emoji}
+  
+ Add End Game Popup Modal with Game Over and Play Again 
+ Prompt :{Add a game over modal that shows Game over and has a button to play again } 
+   
+ Change Color of Snake  
+ Prompt :{Change the color of snake to { #3e9c97 you select a color from the color picker } 
+
+   
+---------------------------------------------------------
+
+ 
+Move Score outside the canvas 
+Prompt : { Move the score to below the game canvas and give it a white background rounded radius about 5px , a stylish box shadow and a gaming font family
+ 
+Add Start, Pause & Resume Buttons  
+Prompt :{On the right side of the canvas add the Start, Pause, Resume Buttons and update the JS code} 
+
+Add Game Sounds 
+ Prompt : {In the assets folder I have the game sounds .wav files eatfood.wav gameover.wav add these sounds to the game using the files in the assets folder}
+
+---------------------------------------------------------
+
+ 
+Move Score outside the canvas 
+Prompt : { Move the score to below the game canvas and give it a white background rounded radius about 5px , a stylish box shadow and a gaming font family
+ 
+Add Start, Pause & Resume Buttons  
+Prompt :{On the right side of the canvas add the Start, Pause, Resume Buttons and update the JS code} 
+
+Add Game Sounds 
+ Prompt : {In the assets folder I have the game sounds .wav files eatfood.wav gameover.wav add these sounds to the game using the files in the assets folder}
+
+
+
+---------------------------------------------------------
