@@ -1,5 +1,15 @@
+:root {
+  --color-primary: #ed5221;
+  --color-dark: #1c1e25;
+  --color-light: #ffffff;
+  --color-gray: #665565;
+}
+
 .App {
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-light);
 }
 
 .App-logo {
@@ -14,18 +24,125 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-left h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #000;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+  color: #333;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  transition: color 0.2s ease;
+}
+
+.icon-button:hover {
+  color: #000;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #000;
   color: white;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  transform: translate(25%, -25%);
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+  .nav-right {
+    gap: 1rem;
+  }
+}
+
+main {
+  flex: 1;
+  /* padding: 1rem 0; */
+}
+
+footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--color-primary);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +152,276 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-light);
+  padding: 10px;
+  justify-self: end;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--color-primary);
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary);
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-gray);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-primary);
+}
+
+.brands-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  margin-bottom: 2rem;
+}
+
+.brands-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0d171a;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.brands-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 6px;
+  background-color: #ed5221;
+  border-radius: 2px;
+}
+
+.brands-grid {
+  display: grid;
+
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.brand-item {
+  flex: 0 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.brand-item img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.brand-item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .brands-section {
+    padding: 3rem 1rem;
+  }
+
+  .brands-grid {
+    gap: 1.5rem;
+  }
+
+  .brand-item {
+    flex: 0 0 120px;
+  }
+
+  .brands-title {
+    font-size: 2rem;
+  }
+}
+
+.slider-container {
+  position: relative;
+  margin-bottom: 2rem;
+  height: 600px;
+  overflow: hidden;
+}
+
+.custom-swiper {
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.02) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+}
+
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  line-height: 0;
+}
+
+.wave {
+  width: 100%;
+  height: auto;
+  transform: translateY(2px); /* Ensures seamless connection */
+}
+
+.slide-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #0e151c;
+  text-align: left;
+  z-index: 2;
+}
+
+.slide-text-overlay h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.slide-text-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ed5221;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #000505;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 220, 138, 0.2);
+}
+
+/* Modern styling for navigation buttons */
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #333;
+}
+
+.custom-swiper .swiper-button-next::after,
+.custom-swiper .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Modern styling for pagination bullets */
+.custom-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  width: 30px;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+/* Optional: Add animation to the wave */
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0) translateY(2px);
+  }
+  50% {
+    transform: translateX(-25%) translateY(2px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(2px);
+  }
+}
+
+.wave {
+  animation: wave-animation 15s linear infinite;
 }
