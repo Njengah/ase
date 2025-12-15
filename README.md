@@ -2,7 +2,13 @@
 
 Welcome to the AI Software Engineer YouTube channel repository! This repository contains code projects organized by tutorials featured on the channel.
 
+## Project Demos
 
+Explore our collection of hands-on project demos in the [`projects/`](./projects/) directory:
+
+- **[Interactive Profile Card](./projects/interactive-card-demo/)** - A beginner-friendly HTML, CSS, and JavaScript demo featuring 3D card animations, theme switching, and responsive design.
+
+Each demo includes complete source code, detailed documentation, and learning objectives to help you master web development fundamentals.
 
 ## Getting Started
 

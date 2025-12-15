@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Interactive Profile Card Demo</h1>
+        <p class="subtitle">Click the card to flip it and see more details!</p>
+
+        <div class="card-wrapper">
+            <div class="card" id="profileCard">
+                <div class="card-front">
+                    <div class="profile-image">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#4A90E2"/>
+                            <circle cx="50" cy="40" r="15" fill="white"/>
+                            <path d="M 25 75 Q 25 55 50 55 Q 75 55 75 75" fill="white"/>
+                        </svg>
+                    </div>
+                    <h2 class="card-name">Jane Developer</h2>
+                    <p class="card-title">Full Stack Developer</p>
+                    <button class="flip-btn" onclick="flipCard()">View Details →</button>
+                </div>
+
+                <div class="card-back">
+                    <h3>About Me</h3>
+                    <p class="bio">Passionate developer with expertise in HTML, CSS, and JavaScript. Love building interactive web experiences!</p>
+
+                    <div class="skills">
+                        <h4>Skills</h4>
+                        <div class="skill-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
+
+                    <button class="flip-btn" onclick="flipCard()">← Back</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" onclick="changeTheme('blue')">Blue Theme</button>
+            <button class="control-btn" onclick="changeTheme('purple')">Purple Theme</button>
+            <button class="control-btn" onclick="changeTheme('green')">Green Theme</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
